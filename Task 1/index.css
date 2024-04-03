@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #main {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+  }
+  #left {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+  }
+  #right {
+    width: 60%;
+    height: 100%;
+    background-color: yellow;
+  }
+  #rtop {
+    width: 100%;
+    height: 50%;
+    background-color: yellowgreen;
+    display: flex;
+  }
+  #rbottom {
+    width: 100%;
+    height: 50%;
+    background-image: url(https://img.freepik.com/free-photo/top-view-desk-concept-with-copy-space_23-2148459659.jpg?t=st=1711254160~exp=1711257760~hmac=875524c9b1fd59c692aa68a9e85a7af082d3e885bfdd8d5d65e3fb5392ba3509&w=826);
+    background-size: cover;
+    background-position: top;
+  }
+  #rtleft {
+    width: 55%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-photo/flat-lay-aesthetic-office-desk_23-2148219266.jpg?t=st=1711254224~exp=1711257824~hmac=0576cd8a7ebd0cef7d3c7361f5ca57e0fcf8689fddfad02d605d1d6fe8da36de&w=826);
+    background-size: cover;
+    background-position: center;
+  }
+  #rtright {
+    width: 45%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-photo/ai-cloud-concept-with-robot-arm_23-2149739748.jpg?t=st=1711254394~exp=1711257994~hmac=73a1e9802dd56e9c9c175840b373dacced3c89a7af800f9611808e282fd0542f&w=740);
+    background-size: cover;
+    background-position: center;
+  }
+  #lnav {
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  #lnavr a {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  #lnavr {
+    display: flex;
+    align-items: inherit;
+  }
+  #lnavr i {
+    color: royalblue;
+  }
+  #left #textcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #textcenter h1 {
+    font-size: 90px;
+    font-weight: 900;
+  }
+  #textcenter p {
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #textcenter a {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.6;
+  }
+  @media (max-width: 500px) {
+    #main{
+      flex-direction: column;
+    }
+    #main #left{
+      width: 100%;
+    }
+    #main #right{
+      width: 100%;
+    }
+  }
+  
